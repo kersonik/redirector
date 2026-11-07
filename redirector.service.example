@@ -1,0 +1,14 @@
+[Unit]
+Description=URL Redirector GeoIP Service
+After=network.target
+
+[Service]
+User=www-data
+WorkingDirectory=/var/www/redirector
+ExecStart=/var/www/redirector/venv/bin/gunicorn -w 3 -b 127.0.0.1:5005 app:app
+Restart=always
+RestartSec=3
+Environment=DB_PATH=/var/www/redirector/redirector.db
+
+[Install]
+WantedBy=multi-user.target

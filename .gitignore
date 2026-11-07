@@ -1,0 +1,32 @@
+# SQLite database & local data
+*.db
+*.sqlite
+*.sqlite3
+redirector.db
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Python cache & build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# Environment configs
+.env
+.env.*
+
+# Logs & temporary files
+*.log
+*.tmp
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
